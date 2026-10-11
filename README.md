@@ -3,7 +3,7 @@
 Interactive, browser-based demos for learning the fundamentals of computer vision.
 ## Demo: Image Normalization
 
-**[▶ Open the live demo]([https://YOUR-USERNAME.github.io/Computer-Vision-Basics/](https://claude.ai/artifact/2iqVCoAcJE1hgGuPr7G1fz))**
+**[▶ Open the live demo](https://claude.ai/artifact/2iqVCoAcJE1hgGuPr7G1fz)**
 
 See what normalization does to an image, one pixel at a time. Pick a photo, pick a method, then point at any pixel to see the exact arithmetic behind the result.
 
