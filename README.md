@@ -6,8 +6,8 @@ Interactive, browser-based demos for learning the fundamentals of computer visio
 
 | Demo | What it teaches | Link |
 |---|---|---|
-| Image Normalization | How pixel values are rescaled before training, and how normalization layers work inside networks | [▶ Open](https://claude.ai/artifact/2iqVCoAcJE1hgGuPr7G1fz) |
-| ⛰️ Optimizers | How SGD, Adam and the newest optimizers (Lion, Muon, SOAP and more) find the lowest loss | [▶ Open](https://claude.ai/artifact/88JpAr9p9rTgMGad9FZ5Fq) |
+| Image Normalization | How pixel values are rescaled before training, and how normalization layers work inside networks | [▶](https://claude.ai/artifact/2iqVCoAcJE1hgGuPr7G1fz) |
+| ⛰️ Optimizers | How SGD, Adam and the newest optimizers (Lion, Muon, SOAP and more) find the lowest loss | [▶](https://claude.ai/artifact/88JpAr9p9rTgMGad9FZ5Fq) |
 
 ---
 
