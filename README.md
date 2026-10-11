@@ -31,7 +31,5 @@ Batch norm, layer norm, instance norm and group norm, shown on a batch of 4 imag
 - **Three explanation levels:** switch between *new to this*, *comfortable with math* and *training models*.
 - **Problem images:** fog, a dark night scene, a color cast and a well-exposed photo show where each method helps and where it fails.
 - **Use your own photo:** it's processed in your browser and never uploaded anywhere.
-## 🚀 Run it yourself
 
-The demo is a single self-contained `index.html` file. To use it offline, download it and open it in any modern browser.
 
