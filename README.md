@@ -8,6 +8,7 @@ Interactive, browser-based demos for learning the fundamentals of computer visio
 |---|---|---|
 | Image Normalization | How pixel values are rescaled before training, and how normalization layers work inside networks | [▶](https://claude.ai/artifact/2iqVCoAcJE1hgGuPr7G1fz) |
 | ⛰️ Optimizers | How SGD, Adam and the newest optimizers (Lion, Muon, SOAP and more) find the lowest loss | [▶](https://claude.ai/artifact/88JpAr9p9rTgMGad9FZ5Fq) |
+| 〰️ Activation Functions | How ReLU, GELU, SwiGLU and others shape a network, with a tiny network you can train live | [▶](https://claude.ai/artifact/NFAvKN3ZfqBkvY7BspASak) |
 
 ---
 
@@ -81,6 +82,47 @@ Muon, Shampoo and SOAP, shown on a 16×16 weight matrix to explain why they keep
 - **Controls to experiment:** change the learning rate, add noisy gradients like real mini-batches, or click the map to pick a new starting point.
 - **Three explanation levels:** the same *new to this*, *comfortable with math* and *training models* switch as the normalization demo.
 - **What the research says:** a table of optimizers published from 2023 to 2026, plus links to the original papers.
+
+---
+
+## Demo: Activation Functions
+
+**[▶ Open the live demo](https://claude.ai/artifact/NFAvKN3ZfqBkvY7BspASak)**
+
+See how the small curves inside a network let it learn anything more than straight lines. Compare their shapes, train a tiny network with each one, and find out why modern models use the ones they do.
+
+### What you'll learn
+
+**Activations in the explorer**
+
+| Activation | Year | Big idea |
+|---|---|---|
+| Step | 1943 | Fire or don't; can't be trained with gradients |
+| Sigmoid | 1980s | A smooth step from 0 to 1 |
+| Tanh | 1990s | Like sigmoid, but centered on zero |
+| Softplus | 2001 | A smooth, always-positive ReLU |
+| ReLU | 2010 | Keep positives, zero out negatives |
+| Leaky ReLU | 2013 | ReLU that lets a little through for negatives |
+| ELU | 2015 | Negatives curve smoothly to a floor |
+| GELU | 2016 | Smooth ReLU, used in BERT, GPT and ViT |
+| SELU | 2017 | Keeps signals a steady size on its own |
+| Swish / SiLU | 2017 | x times sigmoid(x), found by automated search |
+| Mish | 2019 | A smooth activation popularized by YOLOv4 |
+| Hard-Swish | 2019 | A cheap Swish built for phones |
+| Squared ReLU | 2021 | ReLU squared, for sparse and efficient models |
+
+**Beyond single curves**
+
+- **Softmax:** how the last layer of a classifier turns raw scores into probabilities.
+- **Gated activations:** GLU, ReGLU, GeGLU and SwiGLU, the building block of today's large models, and why SwiGLU's fast growth led to newer fixes.
+
+### Features
+
+- **Function explorer:** overlay any activations, show their slopes, read exact values, and adjust parameters like Leaky ReLU's α or Swish's β.
+- **Train a tiny network live:** watch it separate circle, XOR, two-moons and spiral data with each activation, including dead ReLU neurons piling up.
+- **Vanishing gradients:** measure how the error signal shrinks or explodes through a network up to 60 layers deep.
+- **Softmax playground:** move class scores and the temperature to see how the probabilities change.
+- **Three explanation levels:** the same *new to this*, *comfortable with math* and *training models* switch as the other demos.
 
 ---
 
