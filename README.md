@@ -1,8 +1,7 @@
 # Computer-Vision-Basics
 
-Interactive, browser-based demos for learning the fundamentals of computer vision. No installs, no code to run: open a link and experiment.
-
-## 🎚️ Demo: Image Normalization
+Interactive, browser-based demos for learning the fundamentals of computer vision.
+## Demo: Image Normalization
 
 **[▶ Open the live demo]([https://YOUR-USERNAME.github.io/Computer-Vision-Basics/](https://claude.ai/artifact/2iqVCoAcJE1hgGuPr7G1fz))**
 
