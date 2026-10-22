@@ -14,6 +14,7 @@ Interactive, browser-based demos for learning the fundamentals of computer visio
 | 🔍 Resizing and Interpolation | Nearest, bilinear, bicubic and area resizing, and how shrinking creates aliasing | [▶](https://claude.ai/artifact/LAjsucVo1bWsHb9QFmDc1X) |
 | 🧱 CNN Layer Explorer | Kernel size, stride, padding and dilation, output sizes, parameters and receptive fields | [▶](https://claude.ai/artifact/WZ3Vuh59caLZioh8YuCnAg) |
 | 🗜️ Pooling and Downsampling | Max, average and strided pooling, and why one-pixel shifts can change a CNN's output | [▶](https://claude.ai/artifact/P3XSU3KFdn3f2CZMgsnTqr) |
+| 🎬 Classification & Regression Basics | How a network's final layer, activation and loss function change across binary classification, multi-class classification, and regression | [▶](https://claude.ai/artifact/A1yYVB9Xt1CYb9EwEb1sfi) |
 
 ---
 
@@ -130,6 +131,38 @@ See how the small curves inside a network let it learn anything more than straig
 - **Three explanation levels:** the same *new to this*, *comfortable with math* and *training models* switch as the other demos.
 
 ---
+---
+
+## Demo: Classification & Regression Basics
+
+**[▶ Open the live demo](https://claude.ai/artifact/A1yYVB9Xt1CYb9EwEb1sfi)**
+
+Type your own text or drag a few sliders, and watch the same three problem types a neural network commonly solves respond live: sorting into two classes, sorting into many classes, and predicting a plain number.
+
+### What you'll learn
+
+**Three problems, one shared pipeline**
+
+| Problem type | Example task | Output layer |
+|---|---|---|
+| Binary classification | Movie review → positive or negative | 1 unit, sigmoid |
+| Multi-class classification | Newswire → 1 of 46 topics | N units, softmax |
+| Scalar regression | House features → a price | 1 unit, no activation |
+
+**Along the way**
+
+- Why repeated words don't add anything in a multi-hot vector — presence, not frequency.
+- Why a hidden layer narrower than the number of output classes becomes an information bottleneck.
+- Why a linear output layer can predict any real number, while sigmoid and softmax both stay capped.
+- Why K-fold validation exists: with too little data, a single train/validation split is too noisy to trust.
+
+### Features
+
+- **Live text classifier:** type a movie review and watch its tokens, multi-hot vector, and sigmoid score update as you type.
+- **Architecture builder:** change the number of hidden layers and units, and watch the network diagram, parameter count, and overfitting speed respond.
+- **Newswire topic sorter:** type a news snippet and see softmax probability bars across 6 real Reuters topic categories.
+- **Price estimator:** four sliders, already in normalized units, driving a live linear prediction.
+- **K-fold selector:** click through 4 validation rounds to see which slice of data is held out each time.
 
 ## 🚀 Run it yourself
 
